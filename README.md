@@ -24,7 +24,7 @@ The purpose of this project is to work around with MongoDB and MySQL databases u
 - from datetime import datetime
 - import streamlit as st
 
-### Working of the Project:
+### Work flow of the Project:
 
 1. The project should play around the data from Unstructured database to Structured database.
 2. The project aims to provide the connection between YouTube API and MongoDB and MySQL databases.
