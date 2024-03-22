@@ -116,7 +116,7 @@ def get_comments_info(youtube, video_ids):
 # connecting MongoDB
 # Function to connect to MongoDB
 def connect_to_mongodb():
-    client = pymongo.MongoClient("mongodb+srv://iswaryaparthiban:pwd123456@cluster0.qyejfm2.mongodb.net/?retryWrites=true&w=majority")
+    client = pymongo.MongoClient("mongodb+srv://username:password@cluster0.qyejfm2.mongodb.net/?retryWrites=true&w=majority")
     mongo_db = client["Youtube_Data"]
     mongo_collection = mongo_db["youtube_data1"]
     return mongo_collection
@@ -144,8 +144,8 @@ def insert_video_info_to_mysql(channel_id, video_info):
         connection = mysql.connector.connect(
             host='localhost',
             database='youtube_data',
-            user='root',
-            password='Pwd@123456'
+            user='username',
+            password='password'
         )
         cursor = connection.cursor()
 
@@ -187,8 +187,8 @@ def insert_comment_info_to_mysql(channel_id, comment_info):
         connection = mysql.connector.connect(
             host='localhost',
             database='youtube_data',
-            user='root',
-            password='Pwd@123456'
+            user='username',
+            password='password'
         )
         cursor = connection.cursor()
 
@@ -219,8 +219,8 @@ def insert_channel_info_to_mysql(channel_info):
         connection = mysql.connector.connect(
             host='localhost',
             database='youtube_data',
-            user='root',
-            password='Pwd@123456'
+            user='username',
+            password='password'
         )
         cursor = connection.cursor()
 
@@ -266,8 +266,8 @@ def execute_query(query):
         connection = mysql.connector.connect(
             host='localhost',
             database='youtube_data',
-            user='root',
-            password='Pwd@123456'
+            user='username',
+            password='password'
         )
         cursor = connection.cursor(dictionary=True)
         cursor.execute(query)
