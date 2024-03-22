@@ -33,7 +33,7 @@ The purpose of this project is to work around with MongoDB and MySQL databases u
 5. In Streamlit Application the user can able to upload the channel data to Mongo collections using channel ID.
 6. Display the list of channels in UI which are stored in Mongo collections.
 7. In UI the user can able to select the particular channel which can than store to MySQL tables.
-8. Selct box is used to retrieve few data analysis among the stored channels in MySQL.
+8. List of questions in UI is used to retrieve few data analysis among the stored channels in MySQL.
 
 Thank you all!
 
